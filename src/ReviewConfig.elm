@@ -135,6 +135,7 @@ config =
         { document = Docs.NoMissing.onlyExposed
         , from = Docs.NoMissing.allModules
         }
+        |> Rule.ignoreErrorsForDirectories [ "tests" ]
     , Docs.ReviewAtDocs.rule
     , Docs.ReviewLinksAndSections.rule
     , Docs.UpToDateReadmeLinks.rule
