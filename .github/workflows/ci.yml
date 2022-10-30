@@ -24,13 +24,13 @@ jobs:
           elm-version: 0.19.1
 
       - name: Build
-        run: find src -type f -name '*.elm' -exec elm make {} +
+        run: find review/src -type f -name '*.elm' -exec elm make {} +
 
       - name: elm-format
         uses: sparksp/elm-format-action@v1.0.2
         with:
           elm_files: |
-            src/*.elm
-            src/**/*.elm
+            review/src/*.elm
+            review/src/**/*.elm
             tests/*.elm
           elm_glob: true
