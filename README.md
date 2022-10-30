@@ -8,17 +8,11 @@ This repository was based on [SiriusStarr/elm-review-rules](https://github.com/S
 
 ## Usage
 
-You can try this out by running:
-
-```bash
-npx elm-review --template henriquecbuss/elm-review-rules
-```
-
-For more permanent usage, run:
+You can use this with `degit`:
 
 ```bash
 npm install elm-review --save-dev
-git submodule add https://github.com/henriquecbuss/elm-review-rules.git review
+npx degit henriquecbuss/elm-review-rules/review review
 ```
 
 and then use:
