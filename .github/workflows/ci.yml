@@ -24,7 +24,9 @@ jobs:
           elm-version: 0.19.1
 
       - name: Build
-        run: find review/src -type f -name '*.elm' -exec elm make {} +
+        run: elm make src/ReviewConfig.elm
+        with:
+          working-directory: review/
 
       - name: elm-format
         uses: sparksp/elm-format-action@v1.0.2
